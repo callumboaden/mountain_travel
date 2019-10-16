@@ -1,0 +1,348 @@
+/* General Styles */
+*
+{
+    box-sizing: border-box;
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4 
+{
+    margin: 0;
+}
+img 
+{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+button
+{
+    background: none;
+    border: 0;
+}
+.btn 
+{   
+    margin-top: 40px;
+    display: inline-block;
+    background: #3366cc;
+    padding: 16px 42px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    border-radius: 25px;
+    color: #FFF;
+    font-weight: bold;
+}
+section.packages,
+section.contact 
+{
+    background: rgb(245, 245, 245);
+}
+section 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 80px;
+}
+section .content-area
+{
+    max-width: 700px;
+    margin: 0 auto;
+}
+section .content-area p 
+{
+    line-height: 2;
+}
+section .content-area hr 
+{
+    height: 2px;
+    background: #3366cc;
+    border: 0;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+section h2 
+{
+    font-size: 38px;
+    font-weight: normal;
+}
+.grid 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Header Styles */
+.header h2 a,
+.header nav ul li a
+{
+    color: #FFF;
+}
+.header 
+{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 40px 100px;
+    justify-content: space-between;
+}
+.header h2 a 
+{
+    font-weight: normal;
+}
+.header nav 
+{
+    margin-top: 8px;
+}
+.header nav ul
+{
+    list-style-type: none;
+    margin: 0;
+}
+.header nav ul li 
+{
+    display: inline-block;
+}
+.header nav ul li a
+{
+    display: block;
+    margin: 0 16px;
+}
+/* Hero Styles */
+.hero-content h1,
+.hero-content h2,
+.hero-content a 
+{
+    color: #FFF;
+}
+.hero
+{
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+}
+.hero-image
+{
+    position: absolute;
+    background-image: url('./assets/img/moena_italy.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+.hero-overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.hero-content 
+{
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-content h1 
+{
+    font-size: 76px;
+}
+.hero-content h2 
+{
+    font-size: 22px;
+    font-weight: normal
+}
+
+
+/* Destinations Styles */
+
+.destinations .grid div  
+{
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center center;
+}
+.destinations .grid div.small
+{
+    flex-basis: 30%;
+}
+.destinations .grid div.large
+{
+    flex-basis: 70%;
+}
+.destinations .grid div.small:nth-of-type(1)
+{
+    background-image: url('./assets/img/moena_italy.jpg');
+}
+.destinations .grid div.large:nth-of-type(2)
+{
+    background-image: url('./assets/img/mountain_hike.jpg');
+    background-position: bottom center;
+}
+.destinations .grid div.large:nth-of-type(3)
+{
+    background-image: url('./assets/img/haiku_stairs_kaneohe_usa.jpg');
+}
+.destinations .grid div.small:nth-of-type(4)
+{
+    background-image: url('./assets/img/grassy_ridge.jpg');
+}
+
+/* Packages Styles */
+.packages .grid div
+{
+    height: 300px;  
+    flex-basis: 50%; 
+    padding: 50px;
+}
+.packages .grid div i 
+{
+    font-size: 64px;
+    color: #3366cc;
+}
+.packages .grid div h3 
+{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.packages .grid div p 
+{
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* Testimonials Styles */
+
+.testimonials .slider
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+}
+.testimonials .slider .card 
+{
+    box-shadow: 8px 10px 22px #e6e6e6;
+    flex-basis: 45%;
+    padding: 30px;
+    margin: 40px 2.5%;
+
+}
+
+.testimonials .slider .card .img 
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -60px;
+    background-size: contain;
+    background-position: center center;
+}
+
+.testimonials .slider .card:nth-of-type(1) .img
+{
+    background-image: url('./assets/img/craig_mckay.jpg');
+}
+.testimonials .slider .card:nth-of-type(2) .img
+{
+    background-image: url('./assets/img/isaac-castillejos.jpg');
+}
+.testimonials .slider .card p:first-of-type
+{
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.testimonials .slider .card .name 
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Contact Styles */
+.contact-form
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.contact-form label 
+{
+    padding: 0 8px;   
+}
+.contact-form input
+{
+    padding: 14px; 
+    font-size: 14px;
+    flex-basis: 35%;
+    margin-right: 30px;
+    border: 1px solid rgb(230, 230, 230);
+}
+.contact-form .btn 
+{
+    margin: 0;
+}
+
+/* Footer Styles */
+.footer 
+{
+    background: #59B1EB;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer .social 
+{
+    display: flex;
+    justify-content: center;
+}
+.footer .social div
+{
+    margin: 0 20px;
+}
+.footer .social div i 
+{
+    font-size: 42px;
+    color: #FFF;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .destinations .grid div.large,
+    .destinations .grid div.small,
+    .packages .grid div,
+    .testimonials .slider .card 
+    {
+        flex-basis: 100%;
+    }
+}
